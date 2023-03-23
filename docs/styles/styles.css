@@ -107,7 +107,7 @@ body * {
 }
 .main-project {
     height: 707px;
-    background-image: url('https://samzly.github.io/ic-rdp/docs/images/main-project.png');
+    background-image: url('../images/main-project.png');
     background-size: cover;
     padding-top: 194px;
     position: relative;
