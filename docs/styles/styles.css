@@ -4,6 +4,7 @@
 /*in the end*/
 /*create forms to wrap buttons*/
 /*try do replace position:absolute*/
+/*play with form-tag*/
 /*delete comments*/
 
 /*for test*/
@@ -105,7 +106,7 @@ body * {
 }
 .main-project {
     height: 707px;
-    background-image: url("/images/main-project.png");
+    background-image: url("../images/main-project.png");
     background-size: cover;
     padding-top: 194px;
     position: relative;
