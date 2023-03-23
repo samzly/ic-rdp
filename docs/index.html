@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/icon.png">
     <title>IC "Repair Design Project"</title>
 </head>
 <body>
     <header class="header">
-        <div class="container header-container">
+        <div class="container container_header">
             <span class="logo text_colored-sand">IC "Repair Design Project"</span>
             <nav>
                 <ul class="navigation">
@@ -23,15 +23,31 @@
                 </ul>
             </nav>
             <span><a href="tel:+79287683239" class="tel-number text_colored-sand">+7 (928) 768-32-39</a></span>
-            <button class="button button-header">Request a call</button>
+            <form action="/additional/click.html">
+                <button type="submit" class="button button_header">
+                    Request a call
+                </button>
+            </form>
         </div>
     </header>
     <main>
-<!--        <section class="first">-->
-<!--            <div class="container">-->
-<!--                -->
-<!--            </div>-->
-<!--        </section>-->
+        <section class="main-project">
+            <div class="overlay_main-project"></div>
+            <div class="container container_main-project">
+                <h1 class="title title_main-project">
+                    Turnkey Repair in the<br>city of <span class="text_colored-sand">Rostov-on-Don</span>
+                </h1>
+                <p class="paragraph paragraph_main-project">
+                    Get ready-made turnkey repairs on time<br>with work time saving up to 45 days and 20% from<br>cost of materials due to the organization of work
+                </p>
+                <button class="button button_main-project_calc">
+                    CALCULATE THE COST
+                </button>
+                <button class="button button_main-project_submit">
+                    SUBMIT YOUR APPLICATION
+                </button>
+            </div>
+        </section>
     </main>
     <footer>
 

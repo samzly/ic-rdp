@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
 
 
-/*for test*/
+/*in the end*/
+/*create forms to wrap buttons*/
+/*try do replace position:absolute*/
+/*delete comments*/
 
+/*for test*/
 .test {
-    font-family: "Nunito Sans";
+    font-family: 'Nunito Sans';
 }
 
 
@@ -13,11 +17,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 11px;
-    line-height: 15px;
 }
-.text_colored-sand {
-    color: #E3B873;
+body * {
+    box-sizing: border-box;
+}
+.container {
+    width: 1256px;
+    margin: auto;
 }
 .button {
     background: #E3B873;
@@ -27,20 +33,31 @@ body {
     outline: 0;
     font-size: 11px;
     line-height: 15px;
+    font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 .title {
-    font-family: 'Yeseva One';
+    font-family: 'Yeseva One', cursive;
     font-style: normal;
+    font-weight: 400;
     font-size: 27px;
     line-height: 37px;
     letter-spacing: -0.07em;
     text-transform: uppercase;
+    margin: 0;
 }
-.button-header {
-    padding: 13px 33px;
+.subtitle {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.button_header {
+    /*padding: 13px 33px;*/
     font-style: italic;
     height: 37px;
     width: 161px;
@@ -49,12 +66,9 @@ body {
     background: #131313;
     height: 83px;
     display: flex;
+    margin: 0;
 }
-.container {
-    width: 1256px;
-    margin: auto;
-}
-.header-container {
+.container_header {
     display: flex;
     align-items: center;
     height: 37px;
@@ -65,14 +79,14 @@ body {
     text-decoration: none;
     padding: 0;
     margin-right: 55px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
 }
 .navigation__link {
     text-decoration: none;
     color: #FFFFFF;
     margin-right: 47px;
-}
-.navigation__link.text_colored-sand{
-    color: #E3B873;
 }
 .logo {
     width: 180px;
@@ -85,4 +99,63 @@ body {
 .tel-number {
     color: #E3B873;
     margin-right: 45px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+}
+.main-project {
+    height: 707px;
+    background-image: url("/images/main-project.png");
+    background-size: cover;
+    padding-top: 194px;
+    position: relative;
+    z-index: -2;
+}
+.overlay_main-project {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.7);
+}
+.title_main-project {
+    letter-spacing: normal;
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 53px;
+    height: 105px;
+    width: 676px;
+}
+.container_main-project {
+
+}
+.paragraph_main-project {
+    height: 89px;
+    width: 505px;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 19px 0 41px 0;
+}
+.button_main-project_calc, .button_main-project_submit {
+    height: 51px;
+    width: 207px;
+    font-style: italic;
+
+}
+.button_main-project_submit {
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    background: none;
+    margin-left: 20px;
+}
+
+/*keep
+ at
+ the end!*/
+
+.text_colored-sand {
+    color: #E3B873;
 }
