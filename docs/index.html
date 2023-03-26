@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="images/vectors/icon.svg">
 <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
 <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
 <!--    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap" rel="stylesheet">-->
@@ -33,9 +33,9 @@
 <!--            </form>-->
         </div>
     </header>
-    <main>
+    <main class="main">
         <section class="main-project">
-            <div class="overlay"></div>
+            <div class="overlay_main-project"></div>
             <div class="container container_main-project">
                 <h1 class="title title_main-project">
                     Turnkey Repair in the<br>city of <span class="text_colored-sand">Rostov-on-Don</span>
@@ -43,10 +43,10 @@
                 <p class="paragraph paragraph_main-project">
                     Get ready-made turnkey repairs on time<br>with work time saving up to 45 days and 20% from<br>cost of materials due to the organization of work
                 </p>
-                <button class="button button_main-project_calc">
+                <button type="button" class="button button_main-project_calc">
                     CALCULATE THE COST
                 </button>
-                <button class="button button_main-project_submit">
+                <button type="submit" class="button button_main-project_submit">
                     SUBMIT YOUR APPLICATION
                 </button>
             </div>
@@ -55,9 +55,9 @@
             <div class="container container_projects">
                 <div class="projects-header">
                     <ul class="list_projects-header">
-                        <li><a href="#" class="list_projects-header__item list_projects-header__item-active subtitle">Rostov-on-Don, Admiral</a></li>
-                        <li><a href="#" class="list_projects-header__item subtitle">Sochi Thieves</a></li>
-                        <li><a href="#" class="list_projects-header__item subtitle">Rostov-on-Don Patriotic</a></li>
+                        <li><a href="#" class="list_projects-header__item list_projects-header__item-active">Rostov-on-Don, Admiral</a></li>
+                        <li><a href="#" class="list_projects-header__item">Sochi Thieves</a></li>
+                        <li><a href="#" class="list_projects-header__item">Rostov-on-Don Patriotic</a></li>
                     </ul>
                 </div>
                 <div class="projects_current">
@@ -70,51 +70,99 @@
                     </p>
                     <div class="projects-properties">
                         <div class="div_projects-properties">
-                            <h1 class="subtitle subtitle_projects-properties">
+                            <h2 class="subtitle subtitle_projects-properties">
                                 City:
-                            </h1>
+                            </h2>
                             <p class="paragraph_projects-properties">
                                 Rostov-on-Don<br>LCD admiral
                             </p>
                         </div>
                         <div class="div_projects-properties">
-                            <h1 class="subtitle subtitle_projects-properties">
+                            <h2 class="subtitle subtitle_projects-properties">
                                 Apartment area:
-                            </h1>
+                            </h2>
                             <p class="paragraph_projects-properties">
                                 81 m2
                             </p>
                         </div>
                         <div class="div_projects-properties">
-                            <h1 class="subtitle subtitle_projects-properties">
+                            <h2 class="subtitle subtitle_projects-properties">
                                 Repair time:
-                            </h1>
+                            </h2>
                             <p class="paragraph_projects-properties">
                                 3.5 months
                             </p>
                         </div>
                         <div class="div_projects-properties">
-                            <h1 class="subtitle subtitle_projects-properties">
+                            <h2 class="subtitle subtitle_projects-properties">
                                 Repair cost:
-                            </h1>
+                            </h2>
                             <p class="paragraph_projects-properties">
                                 Upon request
                             </p>
                         </div>
                     </div>
                     <div class="arrows">
-                        <img src="/images/arrow-angle.png" alt="Previous completed project" class="arrows_left">
-                        <img src="/images/arrow-line.png" alt="" class="arrows_left-line">
+                        <a href="#" aria-label="Previous completed project" class="arrows__link">
+                            <img src="/images/vectors/arrow-angle.svg" alt="" class="arrows_left">
+                            <img src="/images/vectors/arrow-line.svg" alt="" class="arrows_left-line">
+                        </a>
                         <div class="arrows_rounds-all">
-                            <div class="arrows_rounds_active" aria-label="First completed project"></div>
-                            <div class="arrows_rounds" aria-label="Second completed project"></div>
-                            <div class="arrows_rounds" aria-label="Third completed project"></div>
+                            <a href="#" aria-label="First completed project" class="arrows__link"><div class="arrows_rounds arrows_rounds_active"></div></a>
+                            <a href="#" aria-label="Second completed project" class="arrows__link"><div class="arrows_rounds"></div></a>
+                            <a href="#" aria-label="Third completed project" class="arrows__link"><div class="arrows_rounds"></div></a>
                         </div>
-                        <img src="/images/arrow-line.png" alt="" class="arrows_right-line">
-                        <img src="/images/arrow-angle.png" alt="Next completed project" class="arrows_right">
+                        <a href="" aria-label="Next completed project" class="arrows__link">
+                            <img src="/images/vectors/arrow-line.svg" alt="" class="arrows_right-line">
+                            <img src="/images/vectors/arrow-angle.svg" alt="" class="arrows_right">
+                        </a>
                     </div>
                     <img src="images/rostov-admiral.png" alt="Picture of Admiral's interior, Rostov-on-Don" class="img_projects_current">
                 </div>
+            </div>
+        </section>
+        <section class="online-control">
+            <div class="container container_online-control">
+                <h2 class="subtitle subtitle_online-control">
+                    online control
+                </h2>
+                <div class="icon_online-control">
+                    <img src="images/vectors/icon_online-control_line.svg" alt="" class="icon_online-control_line">
+                    <img src="images/vectors/icon_online-control_camera.svg" alt="Image of video camera for surveillance" class="icon_online-control_camera">
+                    <img src="images/vectors/icon_online-control_line.svg" alt="" class="icon_online-control_line">
+                </div>
+                <div class="video_online-control">
+                    <div class="overlay_online-control"></div>
+                    <img src="images/preview_online-control.jpg" alt="Video with work of our specialist" class="preview_online-control">
+                    <button type="button" class="button__video-online-control">
+                        <img src="images/vectors/button_play.svg" alt="Play button">
+                    </button>
+                </div>
+                <hr class="hr_after-video">
+                <p class="paragraph_online-control">
+                    At each facility, a camera is installed that broadcasts the progress of work on the clock.
+                    At any time, you can go to our website and monitor the progress of work in your apartment.
+                    You can watch the live broadcast from one of our facilities!<br>
+                    Leave a request below and you will receive a link to the broadcast.
+                </p>
+                <form action="index.html" class="form_online-control">
+                    <div class="name_online-control">
+                        <label for="name_video" class="label_online-control">Name</label>
+                        <input type="text" id="phone_video" placeholder="Your phone number:" class="input_online-control">
+                    </div>
+                    <div class="phone_online-control">
+                        <label for="phone_video" class="label_online-control">Phone</label>
+                        <input type="text" id="name_video" placeholder="What is your name:" class="input_online-control">
+                    </div>
+                    <button type="submit" class="button button_online-control">Submit</button>
+                    <div class="checkbox checkbox_online-control">
+                        <label class="label__checkbox">
+                            <input type="checkbox" class="input__checkbox">
+                            <span class="input__checkbox-square"></span>
+                            <span class="span__checkbox">I agree to the processing of personal data</span>
+                        </label>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
