@@ -287,21 +287,6 @@ body * {
 .arrows_rounds_active {
     background: #FFFFFF;
 }
-.arrows_right {
-    transform: rotate(180deg);
-}
-.arrows_left-line {
-    position: relative;
-    left: -7.5px;
-}
-.arrows_right-line {
-    position: relative;
-    right: -7.5px;
-}
-.arrows__link {
-    display: flex;
-    align-items: center;
-}
 
 /*online control*/
 
