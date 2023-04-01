@@ -17,8 +17,7 @@
 
 
 
-/*general*/
-
+                                                                                        /*general*/
 body {
     margin: 0;
     padding: 0;
@@ -28,6 +27,13 @@ body {
 }
 body * {
     box-sizing: border-box;
+}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 .main {
     position: relative;
@@ -91,8 +97,9 @@ body * {
     text-align: center;
     opacity: 0;
     transition: 0.5s;
+    z-index: 100;
 }
-.input__checkbox:checked + .input__checkbox-square::before{
+.input__checkbox:checked ~ .input__checkbox-square::before{
     opacity: 1;
 }
 .span__checkbox {
@@ -101,9 +108,7 @@ body * {
     font-size: 14px;
     line-height: 23px;
 }
-
-/*header-footer*/
-
+                                                                                            /*header-footer*/
 .header-footer {
     background: #131313;
     height: 83px;
@@ -157,9 +162,7 @@ body * {
     font-size: 11px;
     line-height: 15px;
 }
-
-/*main-project*/
-
+                                                                                        /*main-project*/
 .main-project {
     height: 707px;
     background-image: url('../images/bg_main-project.jpg');
@@ -208,9 +211,7 @@ body * {
     background: none;
     margin-left: 20px;
 }
-
-/*completed projects*/
-
+                                                                                 /*completed projects*/
 .projects {
     height: 1074px;
     background: #131313;
@@ -321,9 +322,7 @@ body * {
 .arrows_rounds_active {
     background: #FFFFFF;
 }
-
-/*online control*/
-
+                                                                                      /*online control*/
 .online-control {
     height: 780px;
     background: #FFFFFF;
@@ -428,9 +427,7 @@ body * {
     align-self: end;
     text-align: center;
 }
-
-/*types of repair*/
-
+                                                                                    /*types of repair*/
 .container_types-repair {
     display: flex;
     flex-direction: column;
@@ -498,10 +495,7 @@ body * {
     text-transform: uppercase;
     margin-top: 4.5%;
 }
-
-/*request for measurer*/
-
-
+                                                                                   /*request for measurer*/
 .measurer {
     height: 968px;
 }
@@ -512,7 +506,7 @@ body * {
 }
 .background_measurer {
     height: 725px;
-    background-image: url('../images/bg_measurer-request.jpg');
+    background-image: url('../images/vectors/bg_measurer-request.svg');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -565,9 +559,6 @@ body * {
     /*grid-column-gap: 50px;*/
     background: #131313;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
-}
-.form_measurer_description {
-    margin: 28px 0 0;
 }
 .field_measurer {
     width: 408px;
@@ -631,6 +622,7 @@ body * {
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
+    margin: 28px 0 0;
 }
 .icon_measurer_feature{
     width: 344px;
@@ -663,10 +655,7 @@ body * {
     height: 72px;
     margin-right: 25px;
 }
-
-
-/*decor styles*/
-
+                                                                                  /*decor styles*/
 .decor-styles {
     height: 864px;
     background-image: url('../images/bg_decor-styles.jpg');
@@ -733,11 +722,242 @@ body * {
 .img__decor-styles:nth-child(4) {
     margin-bottom: 81px;
 }
+                                                                                            /*clients*/
+.clients {
+    height: 1107px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+}
+.background_clients {
+    display: flex;
+    justify-content: center;
+    opacity: 0.05;
+    height: 410px;
+}
+.background_clients_left {
+    margin-right: -25px;
+}
+.background_clients_right {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-left: -25px;
+}
+.container_clients {
+    width: 1236px;
+    height: 642px;
+    margin-top: 110px;
+    text-align: center;
+}
+.annotation_clients {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+}
+.responses_clients {
+    display: flex;
+    justify-content: space-between;
+}
+.response {
+    width: 376px;
+    height: 428px;
+    padding-top: 24px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.response__info {
+    display: flex;
+    align-items: center;
+    margin: 0 0 22px 20px;
+}
+.response__photo {
+    width: 76px;
+    height: 76px;
+    border-radius: 40px;
+}
+.response__name {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 23px;
+    text-align: left;
+}
+.response__review {
+    width: 324px;
+    height: 216px;
+    margin: 0 0 0 20px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    color: #959595;
+}
+.response__repair-attributes {
+    background: #E3B873;
+    height: 54px;
+    width: max-content;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    display: flex;
+    position: relative;
+    bottom: -27px;
+}
+.area__repair-attributes {
+    width: 135px;
+}
+.term__repair-attributes {
+    width: 159px;
+    border-left: solid 0.75px #FFFFFF;
+}
+.area__repair-attributes, .term__repair-attributes {
+    display: flex;
+    align-items: center;
+    padding: 11px 0 11px 17.5px;
+}
+.text__repair-attributes {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 15px;
+}
+.text__repair-attributes_square {
+    position: relative;
+    top: -2px;
+}
+                                                                                           /*questions*/
+.container_questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+}
+.form_questions {
+    width: 883px;
+    height: 445px;
+    display: grid;
+    grid-template: 60px repeat(2, 1fr) 64.5px 135px / 1fr 231px 58px 231px 1fr;
+    justify-items: center;
+    align-items: end;
+    background: #131313;
+}
+.subtitle_questions {
+    color: #FFFFFF;
+    grid-area: 1 / 1 / 2 / 6;
+}
+.field_questions {
+    width: 231px;
+    height: 45px;
+}
+.name_questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: 2 / 2 / 3 / 3;
+}
+.phone_questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: 2 / 4 / 3 / 5;
+}
+.text_questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45px;
+    width: 520px;
+    grid-area: 3 / 2 / 4 / 5;
+}
+.label_questions {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.input_questions {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background: none;
+    padding: 0;
+}
+.input_questions::placeholder {
+    color: #FFFFFF;
+}
+.checkbox_questions {
+    color: #FFFFFF;
+    grid-area: 4 / 1 / 5 / 6;
+}
+.button_questions {
+    width: 200px;
+    height: 51px;
+    padding: 0;
+    align-self: center;
+    grid-area: 5 / 1 / 6 / 6;
+}
+                                                                                     /*contacts*/
+
+.contacts {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 3.47%, rgba(0, 0, 0, 0.82) 100%), url('../images/vectors/bg_contacts.svg');
+    background-size: cover;
+}
+.container_contacts {
+    height: 954px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.text_contacts {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0;
+}
+.button-div_contacts {
+    display: flex;
+    margin: 26px 0 43px;
+}
+.button_contacts {
+    height: 28px;
+    width: 28px;
+    border-radius: 30px;
+    margin: 0 7.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map_contacts {
+    width: 925px;
+    height: 465px;
+    object-fit: cover;
+    margin-bottom: 66px;
+}
 
 
-/*keep
- at
- the end!*/
+                                                                                    /*keep
+                                                                                     at
+                                                                                     the end!*/
 
 
 .text_colored-sand {
