@@ -245,13 +245,16 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
         margin: 0;
     }
     .button_main-project_calc {
+        max-width: 400px;
         width: 100%;
         grid-row: 5 / 6;
+        margin: 0 auto;
     }
     .button_main-project_submit {
+        max-width: 400px;
         width: 100%;
-        margin: 0;
         grid-row: 7 / 8;
+        margin: 0 auto;
     }
 }
                                                                                  /*completed projects*/
@@ -531,6 +534,7 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
         top: 0;
         display: grid;
         grid-template-rows: 26px 20px 28px 40px 207px 28px 1.5px 21.5px 107px 310px;
+        grid-template-columns: 1fr;
         justify-items: center;
     }
     .subtitle_online-control {
@@ -597,6 +601,7 @@ input[type='number'], input[type="number"]:hover, input[type="number"]:focus {
         order: 1;
         align-self: center;
         width: 100%;
+        max-width: 400px;
         height: 51px;
         position: relative;
         bottom: -107px;
